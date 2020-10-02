@@ -1,0 +1,22 @@
+<h1>Bạn muốn xóa:</h1>
+<div>
+  <h3>Book Name:</h3>
+  {{book.title}}
+</div>
+<div>
+  <h3>Author:</h3>
+  {{book.author}}
+</div>
+
+<div>
+  <h3>Description:</h3>
+  {{book.description}}
+</div>
+<div>
+  <div>
+    <input class="btn btn-success btn-sm" type="button" (click)="deleteBook()" value="delete">
+    <input class="btn btn-success btn-sm" type="button" routerLink="/books" value="Back to List Book"
+           style="float: right; margin-right: 75%">
+  </div>
+</div>
+

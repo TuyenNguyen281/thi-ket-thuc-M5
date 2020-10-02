@@ -1,0 +1,22 @@
+<div style="text-align: center;">
+  <h3><a routerLink="/create" class="link">Add new Book</a></h3>
+</div>
+<div>
+  <h3>Book Name:</h3>
+  <p>{{book.title}}</p>
+
+</div>
+<div>
+  <h3>Author:</h3>
+  <p>{{book.author}}</p>
+</div>
+<div>
+  <h3>Description:</h3>
+  <p style="overflow-x: hidden; overflow-y: auto; border:1px solid black;
+            width:700px;
+            height:100px;">{{book.description}}</p>
+</div>
+<div>
+  <input class="btn btn-success btn-sm" type="button" routerLink="/books" value="Back to List Book">
+</div>
+

@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2 class="text-center">Add Book</h2>
+    </div>
+    <form [formGroup]="bookForm">
+      <div class="panel-body" >
+        <div class="form-group">
+          <label for="name">Book Name:
+            <input type="text" formControlName="title" id="name" class="form-control" style="width: 1000px">
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="author">Author:
+            <input type="text" formControlName="author" id="author" class="form-control" style="width: 1000px">
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="description">Description:
+            <textarea type="text" formControlName="description" id="description" class="form-control" style="width: 1000px"></textarea>
+          </label>
+        </div>
+        <div>
+          <input class="btn btn-success btn-sm" type="submit" value="Add Book" (click)="createBook()">
+          <input class="btn btn-success btn-sm" type="button" routerLink="/books" value="Back to List Book" style="float: right; margin-right: 10%">
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+

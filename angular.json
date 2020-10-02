@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ket-thuc-Module5"
+    }
+  },
+  "defaultProject": "ket-thuc-Module5",
+  "cli": {
+    "analytics": "366f151e-3e40-4ccd-8d11-7f3a2ca4fa83"
+  }
 }
